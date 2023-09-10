@@ -1,0 +1,211 @@
+cmake_minimum_required(VERSION 3.26)
+project(UdemyC)
+
+set(CMAKE_CXX_STANDARD 14)
+
+include_directories(Chapter05_Functions/_Exercise/Exercise)
+include_directories(Chapter05_Functions/_Exercise/Solution)
+include_directories(Chapter05_Functions/Debugging)
+include_directories(Chapter05_Functions/Header)
+include_directories(Chapter05_Functions/IncludeGuards)
+include_directories(Chapter06_Pointers/Debugging2)
+include_directories(Chapter07_Arrays/_Exercise/Exercise)
+include_directories(Chapter07_Arrays/_Exercise/Solution)
+include_directories(Chapter11_Files/FileModes)
+include_directories(Chapter11_Files/FileRead)
+include_directories(Chapter11_Files/FileWrite)
+include_directories(Chapter11_Files/UnknownFileSizeRead)
+include_directories(Chapter11_Files/UnknownFileSizeWrite)
+include_directories(Chapter13_VectorStruct)
+include_directories(Chapter13_VectorStruct/Start)
+include_directories(Chapter14_DynamicArray)
+include_directories(Chapter14_DynamicArray/_Start)
+include_directories(Chapter15_Advanced2/Static_Funktion)
+include_directories(Chapter16_CSV)
+
+add_executable(UdemyC
+        Chapter01_Introduction/Main.c
+        Chapter02_Variables/_Exercise/ExerciseChapter2.c
+        Chapter02_Variables/_Exercise/SolutionChapter2.c
+        Chapter02_Variables/ExampleRectangle.c
+        Chapter02_Variables/FalseValuesToDatatypes.c
+        Chapter02_Variables/IntegerBinary.c
+        Chapter02_Variables/IntTypes.c
+        Chapter02_Variables/PrintToConsole.c
+        Chapter02_Variables/ReadFromConsole.c
+        Chapter02_Variables/VariableChar.c
+        Chapter02_Variables/VariableFloat.c
+        Chapter02_Variables/VariableRanges.c
+        Chapter02_Variables/Variables1.c
+        Chapter02_Variables/Variables2.c
+        Chapter02_Variables/Variables3.c
+        Chapter02_Variables/Variables4.c
+        Chapter03_ControlFlow/_Exercise/ExerciseChapter3.c
+        Chapter03_ControlFlow/_Exercise/SolutionChapter3.c
+        Chapter03_ControlFlow/ComparisonOperator.c
+        Chapter03_ControlFlow/Enum.c
+        Chapter03_ControlFlow/EnumProblems.c
+        Chapter03_ControlFlow/ExampleCircle.c
+        Chapter03_ControlFlow/IfStatement1.c
+        Chapter03_ControlFlow/IfStatement2.c
+        Chapter03_ControlFlow/IfStatement3.c
+        Chapter03_ControlFlow/LogicOperators.c
+        Chapter03_ControlFlow/Modulo.c
+        Chapter03_ControlFlow/Switch.c
+        Chapter03_ControlFlow/Ternary.c
+        Chapter04_Loops/_Exercise/ExerciseChapter4.c
+        Chapter04_Loops/_Exercise/SolutionChapter4.c
+        Chapter04_Loops/ExamplePyramide.c
+        Chapter04_Loops/ExampleQuadrat.c
+        Chapter04_Loops/For.c
+        Chapter04_Loops/GameNumberGuesser.c
+        Chapter04_Loops/IncDec.c
+        Chapter04_Loops/NestedFor.c
+        Chapter04_Loops/While.c
+        Chapter04_Loops/While2.c
+        Chapter04_Loops/While3.c
+        Chapter05_Functions/_Exercise/Exercise/Lib.c
+        Chapter05_Functions/_Exercise/Exercise/Lib.h
+        Chapter05_Functions/_Exercise/Exercise/Main.c
+        Chapter05_Functions/_Exercise/Solution/Lib.c
+        Chapter05_Functions/_Exercise/Solution/Lib.h
+        Chapter05_Functions/_Exercise/Solution/Main.c
+        Chapter05_Functions/Debugging/Lib.c
+        Chapter05_Functions/Debugging/Lib.h
+        Chapter05_Functions/Debugging/Main.c
+        Chapter05_Functions/FunctionIntro/main.c
+        Chapter05_Functions/FunctionsIntro2/main.c
+        Chapter05_Functions/FunctionsIntro3/main.c
+        Chapter05_Functions/FunctionsIntro4/main.c
+        Chapter05_Functions/Header/Lib.c
+        Chapter05_Functions/Header/Lib.h
+        Chapter05_Functions/Header/Main.c
+        Chapter05_Functions/IncludeGuards/Lib.c
+        Chapter05_Functions/IncludeGuards/Lib.h
+        Chapter05_Functions/IncludeGuards/Main.c
+        Chapter05_Functions/PostVsPreIncrement/main.c
+        Chapter05_Functions/RecursiveFunction/Main.c
+        Chapter05_Functions/VariableScope/Main.c
+        Chapter05_Functions/VariableScope2/Main.c
+        Chapter06_Pointers/_Exercise/Exercise/Main.c
+        Chapter06_Pointers/_Exercise/Solution/Main.c
+        Chapter06_Pointers/Debugging2/Lib.c
+        Chapter06_Pointers/Debugging2/Lib.h
+        Chapter06_Pointers/Debugging2/Main.c
+        Chapter06_Pointers/CallByValueAndReference.c
+        Chapter06_Pointers/CallByValueAndReference2.c
+        Chapter06_Pointers/CallByValueAndReference3.c
+        Chapter06_Pointers/ExampleSwap.c
+        Chapter06_Pointers/PointerIntro.c
+        Chapter06_Pointers/PointerQuiz1.c
+        Chapter06_Pointers/PointerQuiz2.c
+        Chapter07_Arrays/_Exercise/Exercise/Lib.c
+        Chapter07_Arrays/_Exercise/Exercise/Lib.h
+        Chapter07_Arrays/_Exercise/Exercise/Main.c
+        Chapter07_Arrays/_Exercise/Solution/Lib.c
+        Chapter07_Arrays/_Exercise/Solution/Lib.h
+        Chapter07_Arrays/_Exercise/Solution/Main.c
+        Chapter07_Arrays/ArrayExample.cc
+        Chapter07_Arrays/ArrayExample2.cc
+        Chapter07_Arrays/ArrayExample3.cc
+        Chapter07_Arrays/ArrayFunction.c
+        Chapter07_Arrays/ArraysIntro.c
+        Chapter07_Arrays/ConstAndDefines.c
+        Chapter07_Arrays/MultiDimArray.c
+        Chapter08_PointerArrays/_Exercise/Exercise/Main.c
+        Chapter08_PointerArrays/_Exercise/Solution/Main.c
+        Chapter08_PointerArrays/2Dto1DArray.c
+        Chapter08_PointerArrays/CallocRealloc.c
+        Chapter08_PointerArrays/DatatypeCasting.c
+        Chapter08_PointerArrays/MultiDimPointerArray.c
+        Chapter08_PointerArrays/MultiDimPointerArray2.c
+        Chapter08_PointerArrays/PointerArray1.c
+        Chapter08_PointerArrays/PointerArray2.c
+        Chapter08_PointerArrays/PointerArray3.c
+        Chapter08_PointerArrays/VoidAndNull.c
+        Chapter09_CharArrays/_Exercise/Exercise/Main.c
+        Chapter09_CharArrays/_Exercise/Solution/Main.c
+        Chapter09_CharArrays/CharArrays.c
+        Chapter09_CharArrays/ConcatStrings.c
+        Chapter09_CharArrays/EqualStrings.c
+        Chapter09_CharArrays/LengthStrings.c
+        Chapter09_CharArrays/MultiDimCharArray.c
+        Chapter09_CharArrays/StringsFunctions1.c
+        Chapter09_CharArrays/StringsFunctions2.c
+        Chapter10_Structs/_Exercise/Exercise/Main.c
+        Chapter10_Structs/_Exercise/Solution/Main.c
+        Chapter10_Structs/ComplexStruct.c
+        Chapter10_Structs/ExampleCar.c
+        Chapter10_Structs/ExampleCar2.c
+        Chapter10_Structs/Struct_Pointer.c
+        Chapter10_Structs/StructQuiz.c
+        Chapter10_Structs/Structs.c
+        Chapter10_Structs/StructsFunctions.c
+        Chapter10_Structs/Typedef.c
+        Chapter11_Files/_Exercise/Exercise/Main.c
+        Chapter11_Files/_Exercise/Solution/Main.c
+        Chapter11_Files/FileBinary/Main.c
+        Chapter11_Files/FileModes/Lib.c
+        Chapter11_Files/FileModes/Lib.h
+        Chapter11_Files/FileModes/Main.c
+        Chapter11_Files/FileRead/Lib.c
+        Chapter11_Files/FileRead/Lib.h
+        Chapter11_Files/FileRead/Main.c
+        Chapter11_Files/FileWrite/Lib.c
+        Chapter11_Files/FileWrite/Lib.h
+        Chapter11_Files/FileWrite/Main.c
+        Chapter11_Files/StdStreams/Main.c
+        Chapter11_Files/UnknownFileSizeRead/Lib.c
+        Chapter11_Files/UnknownFileSizeRead/Lib.h
+        Chapter11_Files/UnknownFileSizeRead/Main.c
+        Chapter11_Files/UnknownFileSizeWrite/Lib.c
+        Chapter11_Files/UnknownFileSizeWrite/Lib.h
+        Chapter11_Files/UnknownFileSizeWrite/Main.c
+        Chapter12_Advanced1/_Exercise/Exercise/Main.c
+        Chapter12_Advanced1/_Exercise/Solution/Main.c
+        Chapter12_Advanced1/Assert.c
+        Chapter12_Advanced1/MainArgs.c
+        Chapter12_Advanced1/ProcessorMacros.c
+        Chapter12_Advanced1/Sorting.c
+        Chapter12_Advanced1/Timestamp.c
+        Chapter12_Advanced1/Timing.c
+        Chapter13_VectorStruct/Start/Main.c
+        Chapter13_VectorStruct/Start/Vector.c
+        Chapter13_VectorStruct/Start/Vector.h
+        Chapter13_VectorStruct/Main.c
+        Chapter13_VectorStruct/Vector.c
+        Chapter13_VectorStruct/Vector.h
+        Chapter14_DynamicArray/_Start/DynamicArray.c
+        Chapter14_DynamicArray/_Start/DynamicArray.h
+        Chapter14_DynamicArray/_Start/Main.c
+        Chapter14_DynamicArray/DynamicArray.c
+        Chapter14_DynamicArray/DynamicArray.h
+        Chapter14_DynamicArray/Main.c
+        Chapter15_Advanced2/_Exercise/Exercise/main.c
+        Chapter15_Advanced2/_Exercise/Solution/main.c
+        Chapter15_Advanced2/Static_Funktion/Lib.c
+        Chapter15_Advanced2/Static_Funktion/Lib.h
+        Chapter15_Advanced2/Static_Funktion/Main.c
+        Chapter15_Advanced2/Averager.c
+        Chapter15_Advanced2/Const_Pointer.c
+        Chapter15_Advanced2/PrintfWrapper1.c
+        Chapter15_Advanced2/PrintfWrapper2.c
+        Chapter15_Advanced2/Static_Variable.c
+        Chapter15_Advanced2/StructPadding.c
+        Chapter15_Advanced2/StructPadding_Quiz.c
+        Chapter15_Advanced2/Union.c
+        Chapter16_CSV/CsvReader.c
+        Chapter16_CSV/CsvReader.h
+        Chapter16_CSV/Main.c
+        Chapter16_CSV/Record.c
+        Chapter16_CSV/Record.h
+        Chapter17_Threads/Threadding1/main.c
+        Chapter17_Threads/Threadding2/main.c
+        Chapter17_Threads/Threadding3/main.c
+        Chapter17_Threads/Threadding4/main.c
+        Chapter17_Threads/Threadding5/main.c
+        Chapter17_Threads/Threadding6/main.c
+        Chapter17_Threads/Threadding7/main.c
+        tooling/CompilerCommands/main.c
+        tooling/extraTools/Main.c
+        tooling/gdbPrettyPrint/Main.c)
